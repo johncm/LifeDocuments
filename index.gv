@@ -1,0 +1,6 @@
+digraph G {
+  graph [label="Diagram"];
+  graph_dot [label="Render this graph\nwith dot", URL="javascript: render('index.gv','dot')"];
+  graph_fdp [label="Render this graph\nwith fdp", URL="javascript: render('index.gv','fdp')"];
+  a -> b;
+}

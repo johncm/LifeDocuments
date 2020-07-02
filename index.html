@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'unsafe-eval'; object-src 'none'; style-src 'self'; img-src 'self'; media-src 'none'; frame-src 'none'; font-src 'none'; connect-src 'self' https://unpkg.com; script-src-elem 'self' 'unsafe-inline' https://d3js.org https://unpkg.com; worker-src blob:">
+    <title>Site Template</title>
+    <link href="css/svg.css" rel="stylesheet" type="text/css"
+        integrity="sha256-H3a3JwWKHzu5WyBYHNiS5ID4Se2zVJX62AT0zgPG0rk=" crossorigin="anonymous" />
+</head>
+
+<body id="graph" data-graph="index.gv" data-engine="fdp">
+    <h1>Site Template</h1>
+
+    <script src="https://d3js.org/d3.v5.min.js"
+        integrity="sha384-M06Cb6r/Yrkprjr7ngOrJlzgekrkkdmGZDES/SUnkUpUol0/qjsaQWQfLzq0mcfg"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"
+        integrity="sha384-1HWTtfGJYdG5+yDbr7X8FPlerjyT6+0EEt5zYEu61WtLpzFWwQ/ntN7NlT4pDC/K"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"
+        integrity="sha384-ezbOBm8uJYgjeOZM7uYxYIYFcvXYYBEwUna217FAn/dPySXGpABS7Nt/mW8/pvHb"
+        crossorigin="anonymous"></script>
+    <script src="js/graph.js" integrity="sha256-n6J2FSw/P0fIMgzReuAsDPZTwqAJVKZNDG0DUDL3myI=" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
