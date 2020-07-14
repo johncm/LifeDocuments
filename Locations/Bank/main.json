@@ -6,7 +6,7 @@
             "Keep important documents here, but also make copies to keep at Home."
         ]
     },
-    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
     "tooltip": "Click here to return to Locations",
     "clusters": [
         {

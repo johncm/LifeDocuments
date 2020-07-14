@@ -6,7 +6,7 @@
             "As an temporary location, a freezer might keep documents from burning in a fire."
         ]
     },
-    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
     "tooltip": "Click here to return to Locations",
     "clusters": [
         {

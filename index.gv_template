@@ -23,7 +23,7 @@ strict digraph {
     ];
     {{#clusters}}
 	subgraph cluster_{{cluster_name}} {
-		graph [URL="javascript: renderTemplate('/Location.gv_template','fdp', '/Locations/{{cluster_name}}/main.json')",
+		graph [URL="javascript: renderTemplate('Location.gv_template','fdp', 'Locations/{{cluster_name}}/main.json')",
 		    id="{{cluster_name}}",
 			color=grey,
 			fontcolor=white,
@@ -33,7 +33,7 @@ strict digraph {
 		];
         {{#items}}
     	subgraph cluster_{{cluster_name}}_{{name}} {
-			graph [URL="javascript: renderTemplate('/Item.gv_template','fdp', '/Locations/{{cluster_name}}/{{name}}.json')",
+			graph [URL="javascript: renderTemplate('Item.gv_template','fdp', 'Locations/{{cluster_name}}/{{name}}.json')",
 		        id="{{cluster_name}}_{{name}}",
 				color=lightgrey,
 				fontcolor=black,
