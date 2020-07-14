@@ -1,0 +1,26 @@
+{
+    "note": {
+        "Header": "Lawyer's Office:",
+        "Body": [
+            "Click on one of the items at this location to show suggested documents."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "clusters": [
+        {
+            "cluster_name": "Lawyer",
+            "label": "Lawyer's\nOffice",
+            "tooltip": "Lawyer's Office",
+            "items": [
+                {
+                    "name": "Records",
+                    "label": "Records",
+                    "tooltip": "Records"
+                }
+            ],
+            "cluster_notes": []
+        }
+    ],
+    "locations": []
+}

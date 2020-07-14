@@ -1,0 +1,26 @@
+{
+    "note": {
+        "Header": "Secretary of State:",
+        "Body": [
+            "Click on one of the items at this location to show suggested documents."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "clusters": [
+        {
+            "cluster_name": "SecretaryofState",
+            "label": "Secretary\nof State",
+            "tooltip": "Secretary of State",
+            "items": [
+                {
+                    "name": "Records",
+                    "label": "Records",
+                    "tooltip": "Records"
+                }
+            ],
+            "cluster_notes": []
+        }
+    ],
+    "locations": []
+}

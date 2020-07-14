@@ -1,0 +1,52 @@
+{
+    "note": {
+        "Header": "Home:",
+        "Body": [
+            "Click on one of the items at this location to show suggested documents.",
+            "As an temporary location, a freezer might keep documents from burning in a fire."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "clusters": [
+        {
+            "cluster_name": "Home",
+            "label": "Home",
+            "tooltip": "Home",
+            "items": [
+                {
+                    "name": "FireProofSafe",
+                    "label": "Fireproof\nSafe",
+                    "tooltip": "Fireproof Safe"
+                }
+            ],
+            "cluster_notes": []
+        }
+    ],
+    "locations": [
+        {
+            "location_name": "Bank",
+            "label": "Bank",
+            "tooltip": "Bank",
+            "items": [
+                {
+                    "name": "SafeDepositBox",
+                    "label": "Safe Deposit\nBox",
+                    "tooltip": "Safe Deposit Box"
+                }
+            ]
+        },
+        {
+            "location_name": "AtHome",
+            "label": "Home",
+            "tooltip": "Home",
+            "items": [
+                {
+                    "name": "Freezer",
+                    "label": "Freezer",
+                    "tooltip": "Freezer"
+                }
+            ]
+        }
+    ]
+}

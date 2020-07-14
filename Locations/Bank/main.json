@@ -1,0 +1,48 @@
+{
+    "note": {
+        "Header": "Bank:",
+        "Body": [
+            "Click on one of the items at this location to show suggested documents.",
+            "Keep important documents here, but also make copies to keep at Home."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "clusters": [
+        {
+            "cluster_name": "Bank",
+            "label": "Bank",
+            "tooltip": "Bank",
+            "items": [
+                {
+                    "name": "SafeDepositBox",
+                    "label": "Safe Deposit\nBox",
+                    "tooltip": "Safe Deposit Box"
+                }
+            ],
+            "cluster_notes": [
+                {
+                    "Header": "Lessee:",
+                    "Body": [
+                        "The person renting the Safe Deposit Box.",
+                        "There may be multiple Co-Lessees."
+                    ]
+                }
+            ]
+        }
+    ],
+    "locations": [
+        {
+            "location_name": "Home",
+            "label": "Home",
+            "tooltip": "Home",
+            "items": [
+                {
+                    "name": "FireProofSafe",
+                    "label": "Fireproof\nSafe",
+                    "tooltip": "Fireproof Safe"
+                }
+            ]
+        }
+    ]
+}
