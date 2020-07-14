@@ -7,7 +7,7 @@
             "Keep items here on the way to/from the another secure location."
         ]
     },
-    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
     "tooltip": "Click here to return to Locations",
     "items": [
         {
