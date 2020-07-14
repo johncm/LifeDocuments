@@ -1,0 +1,26 @@
+{
+    "note": {
+        "Header": "Hospital or Medical Center:",
+        "Body": [
+            "Click on one of the items at this location to show suggested documents."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "clusters": [
+        {
+            "cluster_name": "Hospital",
+            "label": "Hospital or\nMedical Center",
+            "tooltip": "Hospital or Medical Center",
+            "items": [
+                {
+                    "name": "RecordsDepartment",
+                    "label": "Records\nDepartment",
+                    "tooltip": "Records Department"
+                }
+            ],
+            "cluster_notes": []
+        }
+    ],
+    "locations": []
+}

@@ -9,12 +9,11 @@
     "tooltip": " ",
     "clusters": [
         {
-            "name": "Home",
+            "cluster_name": "Home",
             "label": "Home",
             "tooltip": "Home",
             "items": [
                 {
-                    "parent_name": "Home",
                     "name": "FireProofSafe",
                     "label": "Fireproof\nSafe",
                     "tooltip": "Fireproof Safe"
@@ -22,12 +21,11 @@
             ]
         },
         {
-            "name": "Bank",
+            "cluster_name": "Bank",
             "label": "Bank",
             "tooltip": "Bank",
             "items": [
                 {
-                    "parent_name": "Bank",
                     "name": "SafeDepositBox",
                     "label": "Safe Deposit\nBox",
                     "tooltip": "Safe Deposit Box"
@@ -35,12 +33,11 @@
             ]
         },
         {
-            "name": "SecretaryofState",
+            "cluster_name": "SecretaryofState",
             "label": "Secretary\nof State",
             "tooltip": "Secretary of State",
             "items": [
                 {
-                    "parent_name": "SecretaryofState",
                     "name": "Records",
                     "label": "Records",
                     "tooltip": "Records"
@@ -48,12 +45,11 @@
             ]
         },
         {
-            "name": "Lawyer",
+            "cluster_name": "Lawyer",
             "label": "Lawyer's\nOffice",
             "tooltip": "Lawyer's Office",
             "items": [
                 {
-                    "parent_name": "Lawyer",
                     "name": "Records",
                     "label": "Records",
                     "tooltip": "Records"
@@ -61,12 +57,11 @@
             ]
         },
         {
-            "name": "Hospital",
+            "cluster_name": "Hospital",
             "label": "Hospital or\nMedical Center",
             "tooltip": "Hospital or Medical Center",
             "items": [
                 {
-                    "parent_name": "Hospital",
                     "name": "RecordsDepartment",
                     "label": "Records\nDepartment",
                     "tooltip": "Records Department"
@@ -74,12 +69,11 @@
             ]
         },
         {
-            "name": "CountyClerksOffice",
+            "cluster_name": "CountyClerksOffice",
             "label": "County Clerk's\nOffice",
             "tooltip": "County Clerk's Office",
             "items": [
                 {
-                    "parent_name": "CountyClerksOffice",
                     "name": "Archives",
                     "label": "Archives",
                     "tooltip": "Archives"

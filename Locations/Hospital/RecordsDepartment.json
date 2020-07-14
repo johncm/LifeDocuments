@@ -1,0 +1,39 @@
+{
+    "note": {
+        "Header": "Hospital Records Department:",
+        "Body": [
+            "Click on one of the documents."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "items": [
+        {
+            "cluster_name": "Hospital",
+            "name": "Records",
+            "label": "Records",
+            "tooltip": "Records",
+            "clusters": [
+                {
+                    "name": "Personal",
+                    "label": "Individual",
+                    "tooltip": "Individual",
+                    "documents": [
+                        {
+                            "name": "HealthCareDirective",
+                            "label": "HealthCare\nDirective",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "HealthCarePOA",
+                            "label": "Healthcare\nPower of Attorney",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

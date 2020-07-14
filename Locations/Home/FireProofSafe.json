@@ -1,0 +1,127 @@
+{
+    "note": {
+        "Header": "Fireproof Safe:",
+        "Body": [
+            "Click on one of the documents.",
+            "Note: These should mostly be copies of what is in the Safe Deposit Box.",
+            "Keep items here on the way to/from the another secure location."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "items": [
+        {
+            "cluster_name": "Home",
+            "name": "FireProofSafe",
+            "label": "Fireproof\nSafe",
+            "tooltip": "Fireproof Safe",
+            "clusters": [
+                {
+                    "name": "Property",
+                    "label": "Property",
+                    "tooltip": "Property",
+                    "documents": [
+                        {
+                            "name": "HouseDeeds",
+                            "label": "House Deed(s)",
+                            "shape": "house",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "VehicleTitles",
+                            "label": "Vehicle\nTitle(s)",
+                            "shape": "box3d",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "InsurancePolicies",
+                            "label": "Insurance\nPolicies",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "ValuableItems",
+                            "label": "Valuable\nItems",
+                            "shape": "circle",
+                            "fillcolor": "white"
+                        }
+                    ]
+                },
+                {
+                    "name": "Family",
+                    "label": "Family",
+                    "tooltip": "Family",
+                    "documents": [
+                        {
+                            "name": "MarriageCertificate",
+                            "label": "Marriage\nCertificate(s)",
+                            "shape": "box3d",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "RentalAgreements",
+                            "label": "Rental\nAgreements",
+                            "shape": "house",
+                            "fillcolor": "white"
+                        }
+                    ]
+                },
+                {
+                    "name": "Personal",
+                    "label": "Individual",
+                    "tooltip": "Individual",
+                    "documents": [
+                        {
+                            "name": "BirthCertificate",
+                            "label": "Birth and Adoption\nCertificate(s)",
+                            "shape": "box3d",
+                            "fillcolor": "red"
+                        },
+                        {
+                            "name": "LastWill",
+                            "label": "Last Will\nand Testament",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "HealthCarePOA",
+                            "label": "Healthcare\nPower of Attorney",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "DurablePOA",
+                            "label": "Durable\nPower of Attorney",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "HealthCareDirective",
+                            "label": "Healthcare\nDirective",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "DeathCertificate",
+                            "label": "Death\nCertificate(s)",
+                            "shape": "box3d",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "SafeDepositBoxContents",
+                            "label": "List of Contents & \nLocation Information\nfor Safe Deposit Box",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "SafeDepositBoxKey",
+                            "label": "Safe Deposit\nBox Key",
+                            "shape": "box",
+                            "fillcolor": "pink"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

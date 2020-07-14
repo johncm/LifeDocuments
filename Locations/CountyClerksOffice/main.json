@@ -1,0 +1,26 @@
+{
+    "note": {
+        "Header": "County Clerk's Office:",
+        "Body": [
+            "Click on one of the items at this location to show suggested documents."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "clusters": [
+        {
+            "cluster_name": "CountyClerksOffice",
+            "label": "County Clerk's\nOffice",
+            "tooltip": "County Clerk's Office",
+            "items": [
+                {
+                    "name": "Archives",
+                    "label": "Archives",
+                    "tooltip": "Archives"
+                }
+            ],
+            "cluster_notes": []
+        }
+    ],
+    "locations": []
+}
