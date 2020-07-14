@@ -8,6 +8,7 @@ strict digraph {
 	];
 	node [label="\N"];
 	Notes	 [color=orange,
+	    id="{{note.Header}}",
 	    fillcolor=yellow,
 		label=<
 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
@@ -21,8 +22,9 @@ strict digraph {
 		fontcolor=black
     ];
     {{#clusters}}
-	subgraph cluster_{{name}} {
-		graph [URL="javascript: render('/Locations/{{name}}/index.gv','fdp')",
+	subgraph cluster_{{cluster_name}} {
+		graph [URL="javascript: renderTemplate('/Location.gv_template','fdp', '/Locations/{{cluster_name}}/main.json')",
+		    id="{{cluster_name}}",
 			color=grey,
 			fontcolor=white,
 			label="{{label}}",
@@ -30,20 +32,24 @@ strict digraph {
 			tooltip="{{tooltip}}"
 		];
         {{#items}}
-    	subgraph cluster_{{parent_name}}_{{name}} {
-			graph [URL="javascript: render('/Locations/{{parent_name}}/{{name}}.gv','fdp')",
+    	subgraph cluster_{{cluster_name}}_{{name}} {
+			graph [URL="javascript: renderTemplate('/Item.gv_template','fdp', '/Locations/{{cluster_name}}/{{name}}.json')",
+		        id="{{cluster_name}}_{{name}}",
 				color=lightgrey,
 				fontcolor=black,
 				label="{{label}}",
 				style="dashed,rounded,filled",
 				tooltip="{{tooltip}}"
 			];
+			{{cluster_name}}_{{name}}			 [label="{{label}}",
+		    shape=point,
+		    style=invis];
 		}
         {{/items}}
-	    {{name}}			 [label="{{label}}",
+	    {{cluster_name}}			 [label="{{label}}",
 		    shape=point,
 		    style=invis];
 	}
-    Notes -> {{name}};
+    Notes -> {{cluster_name}};
     {{/clusters}}
 }

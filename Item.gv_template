@@ -1,0 +1,55 @@
+strict digraph {
+	graph [URL="{{URL}}",
+	    bgcolor=white,
+		fontsize=20,
+		labelloc=c,
+		rankdir=TB,
+		tooltip="{{tooltip}}"
+	];
+	node [label="\N"];
+	Notes	 [color=orange,
+	    id="{{note.Header}}",
+	    fillcolor=yellow,
+		label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR><TD>{{note.Header}}</TD></TR>
+  {{#note.Body}}
+  <TR><TD>{{.}}</TD></TR>
+  {{/note.Body}}
+</TABLE>>,
+		shape=note,
+		style=filled,
+		fontcolor=black
+    ];
+    {{#items}}
+    subgraph cluster_{{cluster_name}}_{{name}} {
+		graph [id="{{cluster_name}}_{{name}}",
+		    color=black,
+			fontcolor=black,
+			fillcolor=lightgrey,
+			label="{{label}}",
+			style="rounded,filled",
+			tooltip="{{tooltip}}"
+		];
+		{{#clusters}}
+		subgraph cluster_{{cluster_name}}_{{name}} {
+			graph [id="{{cluster_name}}_{{name}}",
+		        color=black,
+			    fillcolor=yellow,
+				label="{{label}}",
+				style=filled,
+			    tooltip="{{tooltip}}"
+			];
+ 	        {{#documents}}
+	        {{cluster_name}}_{{name}}			 [id="{{cluster_name}}_{{name}}",
+			    color=black,
+				label="{{label}}",
+				shape={{shape}},
+				style=filled,
+				fillcolor={{fillcolor}}];
+	        {{/documents}}
+		}
+		{{/clusters}}
+	}
+    {{/items}}
+}
