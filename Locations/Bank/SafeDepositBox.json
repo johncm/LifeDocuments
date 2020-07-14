@@ -6,7 +6,7 @@
             "Note: In most cases, these are the Original Documents."
         ]
     },
-    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
     "tooltip": "Click here to return to Locations",
     "items": [
         {

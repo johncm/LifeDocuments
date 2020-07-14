@@ -5,7 +5,7 @@
             "Click on one of the items at this location to show suggested documents."
         ]
     },
-    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
     "tooltip": "Click here to return to Locations",
     "clusters": [
         {
