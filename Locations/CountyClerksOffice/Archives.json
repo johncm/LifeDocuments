@@ -1,0 +1,59 @@
+{
+    "note": {
+        "Header": "County Clerk Archives:",
+        "Body": [
+            "Click on one of the documents."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "items": [
+        {
+            "cluster_name": "CountyClerksOffice",
+            "name": "Archives",
+            "label": "Archives",
+            "tooltip": "Archives",
+            "clusters": [
+                {
+                    "name": "Property",
+                    "label": "Property",
+                    "tooltip": "Property",
+                    "documents": [
+                        {
+                            "name": "HouseDeeds",
+                            "label": "House Deed(s)",
+                            "shape": "house",
+                            "fillcolor": "white"
+                        }
+                    ]
+                },
+                {
+                    "name": "Family",
+                    "label": "Family",
+                    "tooltip": "Family",
+                    "documents": [
+                        {
+                            "name": "MarriageCertificate",
+                            "label": "Marriage\nCertificate(s)",
+                            "shape": "box3d",
+                            "fillcolor": "white"
+                        }
+                    ]
+                },
+                {
+                    "name": "Personal",
+                    "label": "Individual",
+                    "tooltip": "Individual",
+                    "documents": [
+                        {
+                            "name": "LastWill",
+                            "label": "Last Will\nand Testament",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

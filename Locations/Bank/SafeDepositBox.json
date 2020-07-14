@@ -1,0 +1,144 @@
+{
+    "note": {
+        "Header": "Safe Deposit Box:",
+        "Body": [
+            "Click on one of the documents.",
+            "Note: In most cases, these are the Original Documents."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "items": [
+        {
+            "cluster_name": "Bank",
+            "name": "SafeDepositBox",
+            "label": "Safe Deposit\nBox",
+            "tooltip": "Safe Deposit Box",
+            "clusters": [
+                {
+                    "name": "Property",
+                    "label": "Property",
+                    "tooltip": "Property",
+                    "documents": [
+                        {
+                            "name": "HouseDeeds",
+                            "label": "House Deed(s)",
+                            "shape": "house",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "VehicleTitles",
+                            "label": "Vehicle\nTitle(s)",
+                            "shape": "box3d",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "InsurancePolicies",
+                            "label": "Insurance\nPolicies",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "ValuableItems",
+                            "label": "Valuable\nItems",
+                            "shape": "circle",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "HouseholdInventory",
+                            "label": "Household\nInventory",
+                            "shape": "house",
+                            "fillcolor": "white"
+                        }
+                    ]
+                },
+                {
+                    "name": "Family",
+                    "label": "Family",
+                    "tooltip": "Family",
+                    "documents": [
+                        {
+                            "name": "MarriageCertificate",
+                            "label": "Marriage\nCertificate(s)",
+                            "shape": "box3d",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "RentalAgreements",
+                            "label": "Rental\nAgreements",
+                            "shape": "house",
+                            "fillcolor": "white"
+                        }
+                    ]
+                },
+                {
+                    "name": "Personal",
+                    "label": "Individual",
+                    "tooltip": "Individual",
+                    "documents": [
+                        {
+                            "name": "BirthCertificate",
+                            "label": "Birth and Adoption\nCertificate(s)",
+                            "shape": "box3d",
+                            "fillcolor": "red"
+                        },
+                        {
+                            "name": "BaptismalCertificate",
+                            "label": "Baptismal\nCertificate",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "SocialSecurityCard",
+                            "label": "Social Security\nCard",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "USPassport",
+                            "label": "U.S.\nPassport",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "LastWill",
+                            "label": "Last Will\nand Testament",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "HealthCarePOA",
+                            "label": "Healthcare\nPower of Attorney",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "DurablePOA",
+                            "label": "Durable\nPower of Attorney",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "HealthCareDirective",
+                            "label": "Healthcare\nDirective",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "DeathCertificate",
+                            "label": "Death\nCertificate(s)",
+                            "shape": "box3d",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "MilitaryServiceRecords",
+                            "label": "Military\nService Records",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

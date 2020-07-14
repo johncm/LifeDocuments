@@ -1,0 +1,33 @@
+{
+    "note": {
+        "Header": "Secretary of State Records:",
+        "Body": [
+            "Click on one of the documents."
+        ]
+    },
+    "URL": "javascript: renderTemplate('/index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "items": [
+        {
+            "cluster_name": "SecretaryofState",
+            "name": "Records",
+            "label": "Records",
+            "tooltip": "Records",
+            "clusters": [
+                {
+                    "name": "Family",
+                    "label": "Family",
+                    "tooltip": "Family",
+                    "documents": [
+                        {
+                            "name": "VehicleTitles",
+                            "label": "Vehicle\nTitle(s)",
+                            "shape": "box3d",
+                            "fillcolor": "white"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
