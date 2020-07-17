@@ -1,0 +1,25 @@
+strict digraph {
+	graph [URL="{{URL}}",
+	    bgcolor=white,
+		fontsize=20,
+		fontnames=svg,
+		labelloc=c,
+		rankdir=TB,
+		tooltip="{{tooltip}}"
+	];
+	node [label="\N"];
+	Notes	 [color=orange,
+	    id="{{note.Header}}",
+	    fillcolor=yellow,
+		label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR><TD>{{note.Header}}</TD></TR>
+  {{#note.Body}}
+  <TR><TD>{{.}}</TD></TR>
+  {{/note.Body}}
+</TABLE>>,
+		shape=note,
+		style=filled,
+		fontcolor=black
+    ];
+}

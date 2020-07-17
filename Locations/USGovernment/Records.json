@@ -1,0 +1,45 @@
+{
+    "note": {
+        "Header": "U.S. Government Records:",
+        "Body": [
+            "Click on one of the documents."
+        ]
+    },
+    "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "items": [
+        {
+            "cluster_name": "USGovernment",
+            "name": "Records",
+            "label": "Records",
+            "tooltip": "Records",
+            "clusters": [
+                {
+                    "name": "Personal",
+                    "label": "Individual",
+                    "tooltip": "Individual",
+                    "documents": [
+                        {
+                            "name": "SocialSecurityCard",
+                            "label": "Social Security\nCard",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "USPassport",
+                            "label": "U.S.\nPassport",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "MilitaryServiceRecords",
+                            "label": "Military\nService Records",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
