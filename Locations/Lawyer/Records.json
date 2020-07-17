@@ -2,7 +2,8 @@
     "note": {
         "Header": "Lawyer Records:",
         "Body": [
-            "Click on one of the documents."
+            "Click on one of the documents.",
+            "Any documents created with the help of the Lawyer, would be copied here."
         ]
     },
     "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
@@ -26,7 +27,45 @@
                             "fillcolor": "white"
                         }
                     ]
+                },
+                {
+                    "name": "Personal",
+                    "label": "Individual",
+                    "tooltip": "Individual",
+                    "documents": [
+                        {
+                            "name": "LivingTrust",
+                            "label": "Living Trust",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "LastWill",
+                            "label": "Last Will\nand Testament",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "HealthCarePOA",
+                            "label": "Healthcare\nPower of Attorney",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "DurablePOA",
+                            "label": "Durable\nPower of Attorney",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
+                            "name": "HealthCareDirective",
+                            "label": "Healthcare\nDirective",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        }
+                    ]
                 }
+
             ]
         }
     ]
