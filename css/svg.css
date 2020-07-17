@@ -2,3 +2,16 @@
     display: block;
     margin: auto;
 }
+
+svg #graph0.graph .cluster g>a>path {
+    fill: grey;
+    stroke: black;
+    stroke-width: 2;
+    stroke-dasharray: 5,2;
+}
+
+svg #graph0.graph .cluster g>a:hover>path {
+    fill: lightgrey;
+    stroke: purple;
+    stroke-width: 4; 
+}
