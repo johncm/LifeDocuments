@@ -2,6 +2,7 @@ strict digraph {
 	graph [URL="{{URL}}",
 	    bgcolor=white,
 		fontsize=20,
+		fontnames=svg,
 		labelloc=c,
 		rankdir=TB,
 		tooltip="{{tooltip}}"
@@ -25,30 +26,27 @@ strict digraph {
 	subgraph cluster_{{cluster_name}} {
 		graph [URL="javascript: renderTemplate('Location.gv_template','fdp', 'Locations/{{cluster_name}}/main.json')",
 		    id="{{cluster_name}}",
-			color=grey,
 			fontcolor=white,
 			label="{{label}}",
-			style="dashed,rounded,filled",
+			style="rounded",
 			tooltip="{{tooltip}}"
 		];
         {{#items}}
     	subgraph cluster_{{cluster_name}}_{{name}} {
 			graph [URL="javascript: renderTemplate('Item.gv_template','fdp', 'Locations/{{cluster_name}}/{{name}}.json')",
 		        id="{{cluster_name}}_{{name}}",
-				color=lightgrey,
 				fontcolor=black,
 				label="{{label}}",
-				style="dashed,rounded,filled",
+				style="rounded",
 				tooltip="{{tooltip}}"
 			];
 			{{cluster_name}}_{{name}}			 [label="{{label}}",
 		    shape=point,
-		    style=invis];
+			style=invis];
 		}
         {{/items}}
 	    {{cluster_name}}			 [label="{{label}}",
-		    shape=point,
-		    style=invis];
+		    shape=point];
 	}
     Notes -> {{cluster_name}};
     {{/clusters}}

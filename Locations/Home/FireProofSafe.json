@@ -78,6 +78,12 @@
                             "fillcolor": "red"
                         },
                         {
+                            "name": "LivingTrust",
+                            "label": "Living Trust",
+                            "shape": "box",
+                            "fillcolor": "orange"
+                        },
+                        {
                             "name": "LastWill",
                             "label": "Last Will\nand Testament",
                             "shape": "box",

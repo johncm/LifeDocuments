@@ -2,6 +2,7 @@ strict digraph {
 	graph [URL="{{URL}}",
 	    bgcolor=white,
 		fontsize=20,
+		fontnames=svg,
 		labelloc=c,
 		rankdir=TB,
 		tooltip="{{tooltip}}"
@@ -23,12 +24,11 @@ strict digraph {
     ];
     {{#items}}
     subgraph cluster_{{cluster_name}}_{{name}} {
-		graph [id="{{cluster_name}}_{{name}}",
-		    color=black,
+		graph [URL="javascript: renderTemplate('Location.gv_template','fdp', 'Locations/{{cluster_name}}/main.json')",
+		    id="{{cluster_name}}_{{name}}",
 			fontcolor=black,
-			fillcolor=lightgrey,
 			label="{{label}}",
-			style="rounded,filled",
+			style="rounded",
 			tooltip="{{tooltip}}"
 		];
 		{{#clusters}}
@@ -41,7 +41,8 @@ strict digraph {
 			    tooltip="{{tooltip}}"
 			];
  	        {{#documents}}
-	        {{cluster_name}}_{{name}}			 [id="{{cluster_name}}_{{name}}",
+	        {{cluster_name}}_{{name}} [URL="javascript: renderTemplate('Document.gv_template','fdp', 'Documents/{{name}}.json')",
+		        id="{{cluster_name}}_{{name}}",
 			    color=black,
 				label="{{label}}",
 				shape={{shape}},

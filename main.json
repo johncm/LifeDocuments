@@ -33,6 +33,18 @@
             ]
         },
         {
+            "cluster_name": "USGovernment",
+            "label": "U.S. Government",
+            "tooltip": "U.S. Government",
+            "items": [
+                {
+                    "name": "Records",
+                    "label": "Records",
+                    "tooltip": "Records"
+                }
+            ]
+        },
+        {
             "cluster_name": "SecretaryofState",
             "label": "Secretary\nof State",
             "tooltip": "Secretary of State",
