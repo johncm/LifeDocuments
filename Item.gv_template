@@ -41,8 +41,8 @@ strict digraph {
 			    tooltip="{{tooltip}}"
 			];
  	        {{#documents}}
-	        {{cluster_name}}_{{name}} [URL="javascript: renderTemplate('Document.gv_template','fdp', 'Documents/{{name}}.json')",
-		        id="{{cluster_name}}_{{name}}",
+	        {{name}} [URL="javascript: renderTemplate('Document.gv_template','fdp', 'Documents/{{name}}.json')",
+		        id="{{name}}",
 			    color=black,
 				label="{{label}}",
 				shape={{shape}},
