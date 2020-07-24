@@ -91,6 +91,18 @@
                     "tooltip": "Archives"
                 }
             ]
+        },
+        {
+            "cluster_name": "InsuranceProvider",
+            "label": "Insurance\nProvider",
+            "tooltip": "Insurance Provider",
+            "items": [
+                {
+                    "name": "Records",
+                    "label": "Records",
+                    "tooltip": "Records"
+                }
+            ]
         }
     ]
 }

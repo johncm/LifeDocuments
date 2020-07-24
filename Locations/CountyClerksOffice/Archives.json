@@ -20,8 +20,8 @@
                     "tooltip": "Property",
                     "documents": [
                         {
-                            "name": "HouseDeeds",
-                            "label": "House Deed(s)",
+                            "name": "RealEstateDeeds",
+                            "label": "Real Estate\nDeed(s)",
                             "shape": "house",
                             "fillcolor": "white"
                         }
@@ -45,6 +45,12 @@
                     "label": "Individual",
                     "tooltip": "Individual",
                     "documents": [
+                        {
+                            "name": "BirthCertificate",
+                            "label": "Birth and Adoption\nCertificate(s)",
+                            "shape": "box3d",
+                            "fillcolor": "red"
+                        },
                         {
                             "name": "LastWill",
                             "label": "Last Will\nand Testament",
