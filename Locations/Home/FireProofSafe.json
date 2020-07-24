@@ -22,8 +22,8 @@
                     "tooltip": "Property",
                     "documents": [
                         {
-                            "name": "HouseDeeds",
-                            "label": "House Deed(s)",
+                            "name": "RealEstateDeeds",
+                            "label": "Real Estate\nDeed(s)",
                             "shape": "house",
                             "fillcolor": "white"
                         },
@@ -78,6 +78,12 @@
                             "fillcolor": "red"
                         },
                         {
+                            "name": "SocialSecurityCard",
+                            "label": "Social Security\nCard",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        },
+                        {
                             "name": "LivingTrust",
                             "label": "Living Trust",
                             "shape": "box",
@@ -103,7 +109,7 @@
                         },
                         {
                             "name": "HealthCareDirective",
-                            "label": "Healthcare\nDirective",
+                            "label": "Advance Healthcare\nDirective",
                             "shape": "box",
                             "fillcolor": "orange"
                         },

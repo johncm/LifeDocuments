@@ -21,8 +21,8 @@
                     "tooltip": "Property",
                     "documents": [
                         {
-                            "name": "HouseDeeds",
-                            "label": "House Deed(s)",
+                            "name": "RealEstateDeeds",
+                            "label": "Real Estate\nDeed(s)",
                             "shape": "house",
                             "fillcolor": "white"
                         },
@@ -126,7 +126,7 @@
                         },
                         {
                             "name": "HealthCareDirective",
-                            "label": "Healthcare\nDirective",
+                            "label": "Advance Healthcare\nDirective",
                             "shape": "box",
                             "fillcolor": "orange"
                         },
