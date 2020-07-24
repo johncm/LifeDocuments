@@ -1,0 +1,68 @@
+{
+    "note": {
+        "Header": "Durable Power of Attorney:",
+        "Body": [
+            "Created with a Law Professional or Hospital Records.",
+            "Specifies who is responsible for a person's finances.",
+            "Click on one of the documents or Locations."
+        ],
+        "Check_List": [
+            "Making Financial decisions",
+            "Providing Funds for the Healthcare Power of Attorney"
+        ]
+    },
+    "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "document_name": "DurablePOA",
+    "label": "Durable\nPower of Attorney",
+    "shape": "box",
+    "fillcolor": "orange",
+    "documents": [
+        {
+            "name": "HealthCarePOA",
+            "label": "Healthcare\nPower of Attorney",
+            "shape": "box",
+            "fillcolor": "orange"
+        }
+    ],
+    "locations": [
+        {
+            "location_name": "Bank",
+            "label": "Bank",
+            "tooltip": "Bank",
+            "items": [
+                {
+                    "name": "SafeDepositBox",
+                    "label": "Safe Deposit\nBox",
+                    "tooltip": "Safe Deposit Box"
+                }
+            ]
+        },
+        {
+            "location_name": "Home",
+            "label": "Home",
+            "tooltip": "Home",
+            "items": [
+                {
+                    "name": "FireProofSafe",
+                    "label": "Fireproof\nSafe",
+                    "tooltip": "Fireproof Safe"
+                }
+            ]
+        }
+    ],
+    "issuer": [
+        {
+            "location_name": "Lawyer",
+            "label": "Lawyer's\nOffice",
+            "tooltip": "Lawyer's Office",
+            "items": [
+                {
+                    "name": "Records",
+                    "label": "Records",
+                    "tooltip": "Records"
+                }
+            ]
+        }
+    ]
+}

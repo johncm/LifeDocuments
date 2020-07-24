@@ -22,4 +22,108 @@ strict digraph {
 		style=filled,
 		fontcolor=black
     ];
+    {{document_name}} [id="{{document_name}}",
+		color=black,
+		label="{{label}}",
+		shape={{shape}},
+		style=filled,
+		fillcolor={{fillcolor}},
+		tooltip="{{tooltip}}"];
+	subgraph cluster_documents {
+		graph [id="documents",
+		label=""];
+		Needed	 [color=orange,
+			id="Needed",
+			fillcolor=yellow,
+			label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+  <TR><TD>Needed For:</TD></TR>
+  {{#note.Check_List}}
+  <TR><TD align="left">&#x2611; {{.}}</TD></TR>
+  {{/note.Check_List}}
+</TABLE>>,
+			shape=note,
+			style=filled,
+			fontcolor=black
+		];
+		{{#documents}}
+		{{name}} [URL="javascript: renderTemplate('Document.gv_template','fdp', 'Documents/{{name}}.json')",
+			id="{{name}}",
+			color=black,
+			label="{{label}}",
+			shape={{shape}},
+			style=filled,
+			fillcolor={{fillcolor}}];
+		{{/documents}}
+	}
+   	subgraph cluster_locations {
+		graph [id="locations",
+		label="Locations:"];
+	{{#locations}}
+	subgraph cluster_{{location_name}} {
+		graph [URL="javascript: renderTemplate('Location.gv_template','fdp', 'Locations/{{location_name}}/main.json')",
+		    id="{{location_name}}",
+			fontcolor=white,
+			label="{{label}}",
+			style="rounded",
+			tooltip="{{tooltip}}"
+		];
+        {{#items}}
+    	subgraph cluster_{{location_name}}_{{name}} {
+			graph [URL="javascript: renderTemplate('Item.gv_template','fdp', 'Locations/{{location_name}}/{{name}}.json')",
+			    id="{{location_name}}_{{name}}",
+				fontcolor=black,
+				label="{{label}}",
+				style="rounded",
+				tooltip="{{tooltip}}"
+			];
+			{{location_name}}_{{name}}			 [label="{{label}}",
+		    shape=point,
+		    style=invis];
+		}
+        {{/items}}
+	    {{location_name}}			 [label="{{label}}",
+		    shape=point,
+		    style=invis];
+	}
+	{{/locations}}
+	{{#issuer}}
+	subgraph cluster_{{location_name}} {
+		graph [URL="javascript: renderTemplate('Location.gv_template','fdp', 'Locations/{{location_name}}/main.json')",
+		    id="{{location_name}}",
+			fontcolor=white,
+			label="{{label}}",
+			style="rounded",
+			tooltip="{{tooltip}}"
+		];
+        {{#items}}
+    	subgraph cluster_{{location_name}}_{{name}} {
+			graph [URL="javascript: renderTemplate('Item.gv_template','fdp', 'Locations/{{location_name}}/{{name}}.json')",
+			    id="{{location_name}}_{{name}}",
+				fontcolor=black,
+				label="{{label}}",
+				style="rounded",
+				tooltip="{{tooltip}}"
+			];
+			{{location_name}}_{{name}}			 [label="{{label}}",
+		    shape=point,
+		    style=invis];
+		}
+        {{/items}}
+	    {{location_name}}			 [label="{{label}}",
+		    shape=point,
+		    style=invis];
+	}
+	{{/issuer}}
+	}
+	{{#locations}}
+        {{#items}}
+			{{document_name}} -> {{location_name}}_{{name}};
+        {{/items}}
+	{{/locations}}
+	{{#issuer}}
+        {{#items}}
+			{{location_name}}_{{name}} -> {{document_name}} [style=dashed];
+        {{/items}}
+	{{/issuer}}
 }

@@ -1,0 +1,62 @@
+{
+    "note": {
+        "Header": "Vehicle Titles:",
+        "Body": [
+            "Issued by the Secretary of State's Office.",
+            "Click on one of the documents or Locations.",
+            "Used to transfer ownership of a vehicle.",
+            "Defines the boundaries and location of a unique piece of land."
+        ],
+        "Check_List": [
+            "Selling a Vehicle"
+        ]
+    },
+    "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "document_name": "VehicleTitles",
+    "label": "Vehicle\nTitle(s)",
+    "shape": "box3d",
+    "fillcolor": "white",
+    "documents": [
+    ],
+    "locations": [
+        {
+            "location_name": "Bank",
+            "label": "Bank",
+            "tooltip": "Bank",
+            "items": [
+                {
+                    "name": "SafeDepositBox",
+                    "label": "Safe Deposit\nBox",
+                    "tooltip": "Safe Deposit Box"
+                }
+            ]
+        },
+        {
+            "location_name": "Home",
+            "label": "Home",
+            "tooltip": "Home",
+            "items": [
+                {
+                    "name": "FireProofSafe",
+                    "label": "Fireproof\nSafe",
+                    "tooltip": "Fireproof Safe"
+                }
+            ]
+        }
+    ],
+    "issuer": [
+        {
+            "location_name": "SecretaryofState",
+            "label": "Secretary\nof State",
+            "tooltip": "Secretary of State",
+            "items": [
+                {
+                    "name": "Records",
+                    "label": "Records",
+                    "tooltip": "Records"
+                }
+            ]
+        }
+    ]
+}

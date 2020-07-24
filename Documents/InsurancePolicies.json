@@ -1,0 +1,60 @@
+{
+    "note": {
+        "Header": "Insurance\nPolicies:",
+        "Body": [
+            "Issued by your Insurance Provider.",
+            "Click on one of the documents or Locations."
+        ],
+        "Check_List": [
+            "Securing a Real Estate Loan/Mortgage",
+            "Registering a Vehicle"
+        ]
+    },
+    "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
+    "tooltip": "Click here to return to Locations",
+    "document_name": "InsurancePolicies",
+    "label": "Insurance\nPolicies",
+    "shape": "box",
+    "fillcolor": "white",
+    "documents": [],
+    "locations": [
+        {
+            "location_name": "Bank",
+            "label": "Bank",
+            "tooltip": "Bank",
+            "items": [
+                {
+                    "name": "SafeDepositBox",
+                    "label": "Safe Deposit\nBox",
+                    "tooltip": "Safe Deposit Box"
+                }
+            ]
+        },
+        {
+            "location_name": "Home",
+            "label": "Home",
+            "tooltip": "Home",
+            "items": [
+                {
+                    "name": "FireProofSafe",
+                    "label": "Fireproof\nSafe",
+                    "tooltip": "Fireproof Safe"
+                }
+            ]
+        }
+    ],
+    "issuer": [
+        {
+            "location_name": "InsuranceProvider",
+            "label": "Insurance\nProvider",
+            "tooltip": "Insurance Provider",
+            "items": [
+                {
+                    "name": "Records",
+                    "label": "Records",
+                    "tooltip": "Records"
+                }
+            ]
+        }
+    ]
+}
