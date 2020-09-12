@@ -47,7 +47,7 @@ strict digraph {
 			fontcolor=black
 		];
 		{{#documents}}
-		{{name}} [URL="javascript: renderTemplate('Document.gv_template','fdp', 'Documents/{{name}}.json')",
+		{{name}} [URL="javascript: renderTemplateQuery('Document.gv_template','fdp','Documents.json','[?document_name==\'{{name}}\'] | [0]')",
 			id="{{name}}",
 			color=black,
 			label="{{label}}",
@@ -87,6 +87,10 @@ strict digraph {
 		    style=invis];
 	}
 	{{/locations}}
+	}
+   	subgraph cluster_issuer {
+		graph [id="Issuer",
+		label="Issuer:"];
 	{{#issuer}}
 	subgraph cluster_{{location_name}} {
 		graph [URL="javascript: renderTemplate('Location.gv_template','fdp', 'Locations/{{location_name}}/main.json')",
