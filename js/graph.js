@@ -36,3 +36,18 @@ function renderTemplate(filename, engine, view) {
             });
         });
 }
+
+function renderTemplateQuery(filename, engine, view, query) {
+    fetch(filename)
+        .then((response) => response.text())
+        .then((template) => {
+            d3.json(view).then(function (text) {
+                console.log(text);
+                var result = jmespath.search(text, query);
+                console.log(result);
+                var rendered = Mustache.render(template, result);
+                console.log(rendered);
+                graphviz.engine(engine).renderDot(rendered);
+            });
+        });
+}
