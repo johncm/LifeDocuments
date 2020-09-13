@@ -10,9 +10,9 @@
     "items": [
         {
             "cluster_name": "Hospital",
-            "name": "Records",
-            "label": "Records",
-            "tooltip": "Records",
+            "name": "RecordsDepartment",
+            "label": "Records\nDepartment",
+            "tooltip": "Records Department",
             "clusters": [
                 {
                     "name": "Personal",
