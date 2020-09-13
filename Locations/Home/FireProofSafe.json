@@ -4,7 +4,7 @@
         "Body": [
             "Click on one of the documents.",
             "Note: These should mostly be copies of what is in the Safe Deposit Box.",
-            "Keep items here on the way to/from the another secure location."
+            "Keep items here on the way to/from another secure location."
         ]
     },
     "URL": "javascript: renderTemplate('index.gv_template','fdp', 'main.json')",
@@ -122,6 +122,12 @@
                         {
                             "name": "SafeDepositBoxContents",
                             "label": "List of Contents & \nLocation Information\nfor Safe Deposit Box",
+                            "shape": "box",
+                            "fillcolor": "white"
+                        },
+                        {
+                            "name": "BillPaymentList",
+                            "label": "List of Bills & \nPayment Information",
                             "shape": "box",
                             "fillcolor": "white"
                         },
